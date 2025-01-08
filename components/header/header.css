@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: clamp(41.6875rem, 36.4554rem + 26.1607vw, 60rem);
+    max-height: 100vh;
+    background-image: url("../../images/background-header/background.png"), var(--header-gradient);
+}
+
+.header__container-title {
+    padding: 128px 120.5px;
+    text-align: center;
+    border: 2px solid var(--color-primary);
+    margin-block-start: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0;
+    height: auto;
+    max-height: 38%;
+    background-color: var(--color-secondary);
+}
+
+.header__title {
+    font-size: var(--size-title);
+    margin-block-end: clamp(1.25rem, 1.8929rem + -0.7143vw, 1.75rem);
+}
+
+.header__subtitle { 
+    font-size: var(--size-subtitle);
+    font-weight: var(--font-regular);
+    text-transform: uppercase;
+}
