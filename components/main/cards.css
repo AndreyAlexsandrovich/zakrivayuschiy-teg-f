@@ -1,0 +1,101 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: clamp(2.9375rem, 2.7835rem + 0.6573vw, 3.375rem);
+}
+
+.card {
+    border: 2px solid var(--color-primary);
+    width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+    max-width: 100%;
+    padding: 0 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: var(--color-secondary);
+    overflow: hidden;
+}
+
+.card__title {
+    font-weight: var(--font-bold);
+    font-variation-settings: 'wght' var(--font-bold);
+    text-wrap: wrap;
+    padding: 1px 0 6px 10px;
+    background-color: var(--color-secondary);
+}
+
+.image-text-overlay {
+    position: relative;
+}
+
+.text-name-language {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 25px 0 0;
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+    -webkit-text-stroke:  1px var(--color-secondary);
+    text-shadow: 1px 1px 0 var(--color-secondary), 
+    -1px -1px 0 var(--color-secondary), 
+    -1px 1px 0 var(--color-secondary), 
+    1px -1px 0 var(--color-secondary);
+}
+
+@supports (-webkit-text-stroke: 1px var(--color-secondary)) { 
+    .text-name-language { 
+        -webkit-text-stroke: 1px var(--color-secondary);
+        text-shadow: none;
+    }
+}
+
+.card__img {
+    max-width: 100%;
+}
+
+.card__content {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    padding: 26px 23px;
+    font-weight: var(--font-regular);
+    font-family: var(--font-primary);
+}
+
+
+.card__description, .card__additional-info { 
+    text-wrap: wrap;
+}
+
+.card__icon-button { 
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease;
+    cursor: pointer;
+    display: contents;
+}
+
+.card__button { 
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 5px;
+    margin: 0 25px 0 0;
+}
+
+.card__like-button {
+    padding: 10.5px 35px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.button__text { 
+    position: relative;
+    z-index: 10;
+    color: var(--color-secondary, #fff);
+    mix-blend-mode: difference;
+}

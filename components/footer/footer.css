@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 52px 0 103px 0;
+    align-items: center;
+}
+
+.dialog[open] { 
+    position: fixed;
+    inset: 0;
+    width: 357px;
+    max-width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+}
+
+dialog::backdrop { 
+    background-color: var(--color-backdrop);
+}
+
+.dialog-content { 
+    display: flex;
+    align-items: center;
+    margin-block-end: 30px;
+    gap: 20px;
+}
+
+.dialog-title { 
+  line-height: 150%;
+}
+
+.dialog-button { 
+    width: 100%;
+    padding: 12.5px 114.5px;
+    background-color: var(--color-secondary);
+   border: none;
+   border: 2px solid var(--color-primary);
+   cursor: pointer;
+}
+
+.footer__floppy-disk {
+    background-color: var(--color-secondary);
+    border: none;
+    border: 2px solid var(--color-primary);
+    padding: 15px 21px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__floppy-disk  svg { 
+    width: 21px;
+    height: 21px;
+}
+
+.dialog-content svg { 
+    width: 39px;
+    height: 39px;
+}
