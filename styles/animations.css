@@ -27,7 +27,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-primary);
-    transition: left 0.3s ease-in-out;
+    transition: left 0.5s ease-in-out;
 }
 
 .card__like-button:hover::before {
