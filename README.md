@@ -1,1 +1,1 @@
-https://github.com/AndreyAlexsandrovich/zakrivayuschiy-teg-f.git
+https://github.com/AndreyAlexsandrovich/zakrivayuschiy-teg-f/tree/main
