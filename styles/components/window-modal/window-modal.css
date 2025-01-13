@@ -1,0 +1,90 @@
+.modal-window {
+    display: flex;
+    justify-content: center;
+    padding: 45px 0 103px 0;
+    align-items: center;
+}
+
+.dialog[open] {
+    position: fixed;
+    inset: 0;
+    width: 357px;
+    max-width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--color-black, #000);
+}
+
+dialog::backdrop {
+    background-color: var(--color-backdrop, rgba(0, 0, 0, 0.75));
+}
+
+.dialog-content {
+    display: flex;
+    align-items: center;
+    margin-block-end: 30px;
+    gap: 20px;
+}
+
+.dialog-title {
+    line-height: 150%;
+    font-family: var(--font-secondary, "Press Start 2P", fantasy);
+    font-size: var(--size-small, 14px);
+    color: var(--color-black, #000);
+    font-weight: var(--font-regular, 400);
+    inline-size: 234px;
+}
+
+.dialog-button {
+    width: 100%;
+    padding: 12.5px 114.5px;
+    background-color: var(--color-white, #fff);
+    border: 2px solid var(--color-black, #000);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-window__floppy-disk {
+    background-color: var(--color-white, #fff);
+    border: 2px solid var(--color-black, #000);
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.button__icon {
+    width: 21px;
+    height: 21px;
+    fill: var(--color-white);
+    mix-blend-mode: difference;
+}
+
+.dialog-content svg {
+    width: 39px;
+    height: 39px;
+}
+
+@media (width <=375px) {
+    .modal-window {
+        padding: 50px 0 103px 0;
+    }
+
+    .modal-window__floppy-disk {
+        flex-direction: column;
+        padding: 12px 21px;
+    }
+
+    .modal-window__floppy-disk svg {
+        width: 28px;
+        height: 28px;
+    }
+}

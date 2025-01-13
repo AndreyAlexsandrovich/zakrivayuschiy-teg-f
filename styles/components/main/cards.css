@@ -1,0 +1,140 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-block-start: 102px;
+}
+
+.card {
+    border: 2px solid var(--color-black, #000);
+    inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+    max-width: 100%;
+    padding: 0 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: var(--color-white, #fff);
+    overflow: hidden;
+}
+
+.card__title {
+    font-family: var(--font-primary, "Inter Variable", sans-serif);
+    font-size: var(--size-medium, 18px);
+    color: var(--color-black, #000);
+    font-weight: var(--font-bold, 700);
+    font-variation-settings: 'wght'var(--font-bold, 700);
+    text-wrap: wrap;
+    padding: 5px 10px;
+}
+
+.image-text-overlay {
+    position: relative;
+}
+
+.language-name {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: var(--size-small, 14px);
+    color: var(--color-black, #000);
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+    font-family: var(--font-secondary, "Press Start 2P", fantasy);
+    -webkit-text-stroke: 1px var(--color-white, #fff);
+    text-shadow: 1px 1px 0 var(--color-white, #fff),
+        -1px -1px 0 var(--color-white, #fff),
+        -1px 1px 0 var(--color-white, #fff),
+        1px -1px 0 var(--color-white, #fff);
+}
+
+@supports (-webkit-text-stroke: 1px var(--color-white, #fff)) {
+    .language-name {
+        -webkit-text-stroke: 1px var(--color-white, #fff);
+        text-shadow: none;
+    }
+}
+
+.card__img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card__content {
+    display: flex;
+    gap: 27px;
+    flex-direction: column;
+    padding: 25px 23px;
+    font-weight: var(--font-regular, 400);
+    font-family: var(--font-primary, "Inter Variable", sans-serif);
+}
+
+.card__description, .card__additional-info {
+    text-wrap: wrap;
+    color: var(--color-black, #000);
+    font-size: var(--size-medium, 18px);
+    line-height: 117%;
+}
+
+.card__icon-button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 21px 0 0;
+}
+
+.button {
+    padding: 9px 0;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    outline: none;
+}
+
+.card__buttons .button { 
+    inline-size: 130px;
+}
+
+.button__text {
+    font-size: var(--size-small, 14px);
+    line-height: 90%;
+    font-family: var(--font-secondary, "Press Start 2P", fantasy);
+    padding: 0 17px;
+}
+
+.button__text, .button__icon {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white, #fff);
+    mix-blend-mode: difference;
+}
+
+@media (width <=375px) {
+    .language-name {
+        top: 25px;
+        right: 11px;
+    }
+
+    .cards {
+        padding-block-start: 106px;
+    }
+
+    .card__content {
+        padding: 23px 25px;
+    }
+
+    .pixel {
+        padding: 22px 27px;
+    }
+}
