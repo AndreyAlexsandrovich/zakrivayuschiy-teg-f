@@ -4,7 +4,9 @@
 }
 
 .header__container-title {
-    padding: clamp(7rem, 6.6479rem + 1.5023vw, 8rem) clamp(0.875rem, -1.4798rem + 10.0469vw, 7.5625rem);
+    padding-inline: 14px;
+    padding-block-start: 112px;
+    padding-block-end: 120px;
     text-align: center;
     display: flex;
     inline-size: clamp(23.4375rem, 16.3723rem + 35.3261vw, 43.75rem);
