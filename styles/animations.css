@@ -16,7 +16,7 @@
 }
 
 .card__icon-button:focus-visible {
-    border-color: var(--color-black, #000);
+    border-color: var(--color-border, #000);
 }
 
 .button::before {
@@ -27,7 +27,8 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: var(--color-black, #000);
+    --color-background-hover: #000;
+    background-color: var(--color-background-hover, #000);
     transition: left 0.5s ease-in-out;
 }
 
@@ -40,7 +41,8 @@
 }
 
 .button:focus-visible {
-    box-shadow: 2px 2px 0px 0px var(--color-black, #000);
+    --color-shadow: #000;
+    box-shadow: 2px 2px 0px 0px var(--color-shadow, #000);
 }
 
 /* hover heart */
@@ -51,7 +53,7 @@
 }
 
 .like-icon:hover .core {
-    fill: var(--color-black, #000);
+    fill: var(--color-accent, #000);
     transition: fill 0.3s linear;
 }
 
@@ -62,18 +64,18 @@
 
 .like-icon:hover .main-body {
     transition: fill 0.3s linear 0.05s;
-    fill: var(--color-black, #000);
+    fill: var(--color-accent, #000);
 }
 
 /* active heart */
 
 .like-icon:active .core {
     transition: fill 0.3s linear;
-    fill: var(--color-red, red);
+    fill: var(--color-fill, red);
 }
 
 .like-icon:active .main-body {
-    fill: var(--color-red, red);
+    fill: var(--color-fill, red);
     transition: fill 0.3s linear 0.05s;
 }
 
@@ -94,22 +96,22 @@
 }
 
 .like-icon.is-liked .heart {
-    animation: heart 0.1s 0.3s ease-in alternate;
+    animation: heart  0.3s ease-in 0.1s alternate;
     transform-origin: center;
 }
 
 .like-icon.is-liked .core {
-    fill: var(--color-red, red);
+    fill: var(--color-fill, red);
     transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-    fill: var(--color-red, red);
+    fill: var(--color-fill, red);
     transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-    fill: var(--color-red, red);
+    fill: var(--color-fill, red);
     transition: fill 0.3s linear 0.06s;
 }
 
