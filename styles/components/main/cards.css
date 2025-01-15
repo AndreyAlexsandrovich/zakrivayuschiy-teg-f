@@ -7,23 +7,23 @@
 }
 
 .card {
-    border: 2px solid var(--color-accent, #000);
+    border: 2px solid var(--system-color-accent, #000);
     inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
     max-width: 100%;
     padding: 0 0 25px 0;
     display: flex;
     flex-direction: column;
     text-align: start;
-    background-color: var(--shadow-color, #fff);
+    background-color: var(--system-color-background, #fff);
     overflow: hidden;
 }
 
 .card__title {
-    font-family: var(--font-main, "Inter Variable", sans-serif);
-    font-size: var(--size-medium, 18px);
-    color: var(--color-accent, #000);
-    font-weight: var(--font-main-bold-weight, 700);
-    font-variation-settings: 'wght'var(--font-main-bold-weight, 700);
+    font-family: var(--system-font-main, "Inter Variable", sans-serif);
+    font-size: var(--component-size-medium, 18px);
+    color: var(--system-color-accent, #000);
+    font-weight: var(--component-bold-weight, 700);
+    font-variation-settings: 'wght'var(--component-bold-weight, 700);
     text-wrap: wrap;
     padding: 5px 10px;
 }
@@ -36,21 +36,21 @@
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: var(--size-small, 14px);
-    color: var(--color-accent, #000);
+    font-size: var(--component-size-small, 14px);
+    color: var(--system-color-accent, #000);
     mix-blend-mode: hard-light;
     opacity: 0.5;
-    font-family: var(--font-accent, "Press Start 2P", fantasy);
-    -webkit-text-stroke: 1px var(--shadow-color, #fff);
-    text-shadow: 1px 1px 0 var(--shadow-color, #fff),
-        -1px -1px 0 var(--shadow-color, #fff),
-        -1px 1px 0 var(--shadow-color, #fff),
-        1px -1px 0 var(--shadow-color, #fff);
+    font-family: var(--component-font-accent, "Press Start 2P", fantasy);
+    -webkit-text-stroke: 1px var(--component-shadow-color, #fff);
+    text-shadow: 1px 1px 0 var(--component-shadow-color, #fff),
+        -1px -1px 0 var(--component-shadow-color, #fff),
+        -1px 1px 0 var(--component-shadow-color, #fff),
+        1px -1px 0 var(--component-shadow-color, #fff);
 }
 
-@supports (-webkit-text-stroke: 1px var(--shadow-color, #fff)) {
+@supports (-webkit-text-stroke: 1px var(--component-shadow-color, #fff)) {
     .language-name {
-        -webkit-text-stroke: 1px var(--shadow-color, #fff);
+        -webkit-text-stroke: 1px var(--component-shadow-color, #fff);
         text-shadow: none;
     }
 }
@@ -66,14 +66,14 @@
     gap: 27px;
     flex-direction: column;
     padding: 25px 23px;
-    font-weight: var(--font-main-weight, 400);
-    font-family: var(--font-main, "Inter Variable", sans-serif);
+    font-weight: var(--system-font-main-weight, 400);
+    font-family: var(--system-font-main, "Inter Variable", sans-serif);
 }
 
 .card__text {
     text-wrap: wrap;
-    color: var(--color-accent, #000);
-    font-size: var(--size-medium, 18px);
+    color: var(--system-color-accent, #000);
+    font-size: var(--component-size-medium, 18px);
     line-height: 117%;
 }
 
@@ -107,9 +107,9 @@
 }
 
 .button__text {
-    font-size: var(--size-small, 14px);
+    font-size: var(--component-size-small, 14px);
     line-height: 90%;
-    font-family: var(--font-accent, "Press Start 2P", fantasy);
+    font-family: var(--component-font-accent, "Press Start 2P", fantasy);
     padding: 0 17px;
 }
 
