@@ -10,7 +10,6 @@
 
 */
 
-
 .card__icon-button:focus {
     outline: none;
 }
@@ -27,8 +26,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    --component-btn-bg-color: #000;
-    background-color: var(--component-btn-bg-color, #000);
+    background-color: #000;
     transition: left 0.5s ease-in-out;
 }
 
@@ -41,8 +39,7 @@
 }
 
 .button:focus-visible {
-    --component-color-shadow: #000;
-    box-shadow: 2px 2px 0px 0px var(---component-color-shadow, #000);
+    box-shadow: 2px 2px 0px 0px #000;
 }
 
 /* hover heart */
