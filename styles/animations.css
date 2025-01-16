@@ -116,6 +116,11 @@
     animation: sparks 0.3s ease-in 0.3s;
 }
 
+.like-icon .contour { 
+    fill: var(--component-color-countor, #000);
+    transition: fill 0.1s linear;
+}
+
 @keyframes sparks {
     from {
         opacity: 0;

@@ -95,6 +95,7 @@
 .button {
     padding: 9px 0;
     background-color: transparent;
+    border: 2px solid var(--system-color-accent);
     cursor: pointer;
     position: relative;
     overflow: hidden;
